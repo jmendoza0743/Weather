@@ -1,0 +1,16 @@
+#title{
+    color:black;
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+
+button{
+    background-color: cornflowerblue;
+    color: black;
+}
+
+aside{
+    display: block;
+    float: left
+}
