@@ -26,7 +26,7 @@ function getWeather(searchValue){
         dataType: "json",
         success: function(data) {
          console.log(data)
-            var img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
+            var img = $("<img>").attr("src", "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
             $('#cityName').text(data.name + " (" + new Date().toLocaleDateString() + ")").append(img)
             $('#temp').text("Tempreture: " + data.main.temp + "F");
             $('#humid').text("Himidity: "+data.main.humidity + "%")
@@ -87,7 +87,7 @@ function get5day(searchValue){
 
             
             $('#day1')
-                    .append($("<img>").attr("src", "http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png"))
+                    .append($("<img>").attr("src", "https://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png"))
                     .append(temp.text("Tempreture: "+ data.list[0].main.temp +"F"))
                     .append(hum.text("Humidity: "+ data.list[0].main.humidity +"MPH"));
              
@@ -110,7 +110,7 @@ function get5day(searchValue){
             
             $('#day2')
             
-                    .append($("<img>").attr("src", "http://openweathermap.org/img/w/" + data.list[1].weather[0].icon + ".png"))
+                    .append($("<img>").attr("src", "https://openweathermap.org/img/w/" + data.list[1].weather[0].icon + ".png"))
                     .append(temp.text("Tempreture: "+ data.list[2].main.temp +"F"))
                     .append(hum.text("Humidity: "+ data.list[3].main.humidity +"MPH"));
              
@@ -132,7 +132,7 @@ function get5day(searchValue){
 
             
             $('#day3')
-                    .append($("<img>").attr("src", "http://openweathermap.org/img/w/" + data.list[2].weather[0].icon + ".png"))
+                    .append($("<img>").attr("src", "https://openweathermap.org/img/w/" + data.list[2].weather[0].icon + ".png"))
                     .append(temp.text("Tempreture: "+ data.list[2].main.temp +"F"))
                     .append(hum.text("Humidity: "+ data.list[2].main.humidity +"MPH"));
              
@@ -154,7 +154,7 @@ function get5day(searchValue){
 
             
             $('#day4')
-                    .append($("<img>").attr("src", "http://openweathermap.org/img/w/" + data.list[3].weather[0].icon + ".png"))
+                    .append($("<img>").attr("src", "https://openweathermap.org/img/w/" + data.list[3].weather[0].icon + ".png"))
                     .append(temp.text("Tempreture: "+ data.list[3].main.temp +"F"))
                     .append(hum.text("Humidity: "+ data.list[3].main.humidity +"MPH"));
              
@@ -176,7 +176,7 @@ function get5day(searchValue){
 
             
             $('#day5')
-                    .append($("<img>").attr("src", "http://openweathermap.org/img/w/" + data.list[4].weather[0].icon + ".png"))
+                    .append($("<img>").attr("src", "https://openweathermap.org/img/w/" + data.list[4].weather[0].icon + ".png"))
                     .append(temp.text("Tempreture: "+ data.list[4].main.temp +"F"))
                     .append(hum.text("Humidity: "+ data.list[4].main.humidity +"MPH"));
              
