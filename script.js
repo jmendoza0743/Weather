@@ -46,7 +46,7 @@ function getWeather(searchValue){
 function getUVindex(lon, lat){
     $.ajax({
         type: "GET",
-        url:`http://api.openweathermap.org/data/2.5/uvi?appid=8be5a1165eb8ec2b6aa6462c0cbbd937&lat=${lat}&lon=${lon}`,
+        url:`https://api.openweathermap.org/data/2.5/uvi?appid=8be5a1165eb8ec2b6aa6462c0cbbd937&lat=${lat}&lon=${lon}`,
         dataType: "json",
         success: function(data) {
          console.log(data)
@@ -75,7 +75,7 @@ function get5day(searchValue){
     $('#day5').empty();
     $.ajax({
         type: "GET",
-        url: "http://api.openweathermap.org/data/2.5/forecast?q=" + searchValue + "&appid=8be5a1165eb8ec2b6aa6462c0cbbd937&units=imperial",
+        url: "https://api.openweathermap.org/data/2.5/forecast?q=" + searchValue + "&appid=8be5a1165eb8ec2b6aa6462c0cbbd937&units=imperial",
         dataType: "json",
         success: function(data) {
          console.log(data)
@@ -97,7 +97,7 @@ function get5day(searchValue){
     });
     $.ajax({
         type: "GET",
-        url: "http://api.openweathermap.org/data/2.5/forecast?q=" + searchValue + "&appid=8be5a1165eb8ec2b6aa6462c0cbbd937&units=imperial",
+        url: "https://api.openweathermap.org/data/2.5/forecast?q=" + searchValue + "&appid=8be5a1165eb8ec2b6aa6462c0cbbd937&units=imperial",
         dataType: "json",
         success: function(data) {
          console.log(data)
@@ -120,7 +120,7 @@ function get5day(searchValue){
     });
     $.ajax({
         type: "GET",
-        url: "http://api.openweathermap.org/data/2.5/forecast?q=" + searchValue + "&appid=8be5a1165eb8ec2b6aa6462c0cbbd937&units=imperial",
+        url: "https://api.openweathermap.org/data/2.5/forecast?q=" + searchValue + "&appid=8be5a1165eb8ec2b6aa6462c0cbbd937&units=imperial",
         dataType: "json",
         success: function(data) {
          console.log(data)
@@ -142,7 +142,7 @@ function get5day(searchValue){
     });
     $.ajax({
         type: "GET",
-        url: "http://api.openweathermap.org/data/2.5/forecast?q=" + searchValue + "&appid=8be5a1165eb8ec2b6aa6462c0cbbd937&units=imperial",
+        url: "https://api.openweathermap.org/data/2.5/forecast?q=" + searchValue + "&appid=8be5a1165eb8ec2b6aa6462c0cbbd937&units=imperial",
         dataType: "json",
         success: function(data) {
          console.log(data)
@@ -164,7 +164,7 @@ function get5day(searchValue){
     });
     $.ajax({
         type: "GET",
-        url: "http://api.openweathermap.org/data/2.5/forecast?q=" + searchValue + "&appid=8be5a1165eb8ec2b6aa6462c0cbbd937&units=imperial",
+        url: "https://api.openweathermap.org/data/2.5/forecast?q=" + searchValue + "&appid=8be5a1165eb8ec2b6aa6462c0cbbd937&units=imperial",
         dataType: "json",
         success: function(data) {
          console.log(data)
