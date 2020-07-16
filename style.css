@@ -14,3 +14,16 @@ aside{
     display: block;
     float: left
 }
+
+#day2{
+    background-color: black;
+}
+
+.forecast-text{
+    text-align: center;
+}
+
+
+h2{
+    font-size: 25px;
+}
