@@ -22,7 +22,7 @@ function getWeather(searchValue){
     
     $.ajax({
         type: "GET",
-        url: "http://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=8be5a1165eb8ec2b6aa6462c0cbbd937&units=imperial",
+        url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=8be5a1165eb8ec2b6aa6462c0cbbd937&units=imperial",
         dataType: "json",
         success: function(data) {
          console.log(data)
